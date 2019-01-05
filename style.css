@@ -1,0 +1,79 @@
+*{ margin:0; padding:0;}
+a{text-decoration:none;}
+body{background: url('https://cdn.shopify.com/s/files/1/1038/1798/products/desktop-2325627_960_720.jpg?v=1525176554') no-repeat center center; background-size: cover}
+main{
+    /* 横向居中 */
+    text-align: center; 
+    /* 纵向居中 */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+  }
+
+  .key{
+    display:inline-block; 
+    /* inline-block是元素具备了两种（块级和内联）元素的功能，inline最重要的一点就是：元素能够在一行展示，而inline元素所缺失的设置宽高，也是block 元素的功能，从而两个联手*/ width:2em;   
+    width: 50px; height: 40px; 
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 1px solid #373737; /*用border做高亮*/
+    color: #C5C5C5; border-radius: 6px; 
+    box-shadow: 0 0 0 1px #1A1B1C, 0 0 0 2px #1F2020, 0 3px 0 2px #080808; 
+    /*用box shadow做阴影，https://www.jianshu.com/p/5d072a07e889*/
+    position: relative;
+    font-size: 16px; font-family: Helvetica;
+    margin: 0 6px;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* 让字母居中 */
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+   }
+  
+  .row{ margin: 20px; }
+  .wrapper{
+    background:rgba(237,237,233,0.2);
+    border-radius:10px;
+    /* 半透明背景 */
+  }
+  #mainpage{
+    text-align: center;
+  }
+  #mainpage > div:nth-child(2){
+    margin-left: 2em;
+  }
+  #mainpage > div:nth-child(3){
+    margin-left: 2.5em;
+  }
+
+kbd > button{
+  width:1.5em;
+  height:1.5em;
+  border-radius: 5px;
+  background:inherit;
+  background-image:url('https://img.lovepik.com/element/40028/2093.png_1200.png');
+  background-position:center;
+  background-size:cover;
+  position:absolute;
+  right:0;
+  bottom:0;
+  display:none;
+  cursor: pointer;
+}
+button:focus { outline: none; }
+
+kbd:hover > button{
+  display:inline-block;
+}
+
+img{
+  width:1em;
+  height:1em;
+  border-radius: 5px;
+  background:transparent;
+  position:absolute;
+  left:0;
+  bottom:0;
+  cursor: pointer;
+}
